@@ -1,8 +1,16 @@
 @media (min-width: 480px) {
     /* ХЕДЕР */
+    /* ФУТЕР */
+    /* БАННЕР */
+    /* ВІТРИНА */
+    /* ЗАПИС ДО ЛІКАРЯ */
 }
 
 @media (min-width: 640px) {
+    .slick-dots {
+        padding-top: 24px;
+    }
+
     /* ХЕДЕР */
     .site_header .centre {
         position: relative;
@@ -37,6 +45,34 @@
 
     .header_panel .toggle_language a:not([class]):hover {
         border-bottom: 1px solid var(--text-color);
+    }
+
+    .header_panel .icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .serch_from {
+        height: 46px;
+        left: auto;
+        right: 0;
+    }
+
+    .serch_from.active {
+        width: 300px;
+    }
+
+    .search_btn {
+        left: auto;
+        right: 0;
+    }
+
+    .serch_from input {
+        padding: 0 46px 0 10px;
+    }
+    
+    .serch_wrap .open_search .icon:hover {
+        fill: var(--active-icon-color);
     }
 
     .open_menu {
@@ -92,8 +128,13 @@
         padding: 0 0 24px 22px;
         visibility: hidden;
         opacity: 0;
-        background-color: var(--site-bg-contrast);
+        background-color: var(--site-bg-color);
+        box-shadow: 0px 15px 30px -15px rgba(34, 60, 80, 0.2);
         border-bottom: 1px solid var(--border-color);
+        z-index: 1;
+    }
+    
+    .header_nav > ul > li > ul.animation {
         transition: 0.3s;
     }
 
@@ -149,10 +190,45 @@
     .header_nav > ul > li > ul > li > ul a:hover {
         border-bottom: 1px solid transparent;
     }
+    /* ФУТЕР */
+    /* БАННЕР */
+
+    .main_slide {
+        flex-direction: row;
+    }
+
+    .big_slider figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 410px;
+    }
+
+    .slide_image img {
+        min-height: 100%;
+        object-fit: cover;
+    }
+
+    .main_banner .btn {
+        max-width: 156px;
+        margin: 0;
+        text-transform: none;
+    }
+
+    /* ЗАПИС ДО ЛІКАРЯ */
+
 }
 
 @media (min-width: 768px) {
     /* ХЕДЕР */
+    .logo_wrap {
+        max-width: 295px;
+    }
+
+    .logo_wrap .logo {
+        height: 24px;
+    }
+
     .header_panel .call_back {
         display: flex;
         flex-direction: column;
@@ -176,9 +252,60 @@
     .header_panel .call_back .call_me:hover {
         border-bottom: 1px solid var(--link-color-active);
     }
+
+    /* ФУТЕР */
+
+    .site_footer .centre {
+        padding: 0 10px;
+    }
+
+    .footer_top {
+        display: flex;
+    }
+
+    .footer_menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+    }
+
+    .footer_menu > li {
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer_menu > li + li, 
+    .footer_time {
+        margin-top: 0;
+    }
+
+    .footer_time {
+        width: 25%;
+    }
+
+    .footer_boottom {
+        padding-top: 18px;
+    }
+
+    .footer_boottom {
+        align-items: flex-start;
+    }
+
+    .copyright_wrap {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* БАННЕР */
+    /* ВІТРИНА */
+    /* ЗАПИС ДО ЛІКАРЯ */
 }
 
 @media (min-width: 992px) {
+    :root {
+        --section-bottom: 72px;
+    }
     /* ХЕДЕР */
     .header_nav > ul > li > ul > .list_image-wrap {
         width: 33.333%;
@@ -187,12 +314,151 @@
     .header_nav > ul > li > ul > li {
         width: 16.666%;
     }
+
+    .open-doctor_form {
+        width: 258px;
+        height: 48px;
+        font-size: 16px;
+        border-radius: 24px;
+    }
+    /* ФУТЕР */
+    /* БАННЕР */
+
+    .slim_banner {
+        display: block;
+        min-height: 100%;
+    }
+
+    .main_banner.banners_wrap {
+        display: flex;
+    }
+
+    .main_banner.banners_wrap .big_slider {
+        width: 70%
+    }
+
+    .main_banner.banners_wrap .slim_banner {
+        width: 30%
+    }
+
+    .slim_banner .slick-list {
+        height: calc(100% - 40px);
+    }
+
+    .slim_banner .slick-track {
+        height: 100%; 
+    }
+
+    .main_banner.banners_wrap .big_slider figcaption {
+        justify-content: flex-end;
+        padding-bottom: 50px;
+    }
+
+    .slim_slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 42px 50px 42px;
+        height: 100%;
+        background-color: var(--main-accent-color);
+        color: var(--text-contrast);
+    }
+
+    .slim_slide .banner_title {
+        margin-bottom: 30px;
+    }
+
+    .slim_slide .btn {
+        max-width: 176px;
+        border-color: var(--text-contrast);
+        color: var(--text-contrast);
+    }
+
+    .slim_slide .btn:hover {
+        background-color: var(--text-contrast);
+        color: var(--main-accent-color);
+    }
+    /* ВІТРИНА */
+
+    .product_slider {
+        padding-bottom: 10px;
+    }
+
+    .product_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product_filter {
+        margin-bottom: 0;
+    }
+    
+    .product_filter a {
+        font-size: 16px;
+        line-height: 22px; 
+        padding-bottom: 0;   
+    }
+
+    .product-inner .slick-list {
+        padding: 15px 15px 0 15px;
+        margin: -15px -15px 0 -15px;
+    }
+
+    .product_slider .product_item {
+        margin-bottom: 100px;
+    }
+
+    .product_item::after {
+        content: "";
+        width: 100%;
+        height: calc(100% + 60px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--site-bg-color);
+        box-shadow: 0px 0px 30px rgba(66, 171, 179, 0.15);
+        border-radius: 8px;
+        z-index: -1;
+        transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .add_wish {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s
+    }
+
+    .add_wish.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .product_item:hover::after,
+    .product_item:hover .btn,
+    .product_item:hover .add_wish {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .product_link:hover {
+        animation: blick 1s ease-in;
+    }
+
+    @keyframes blick {
+        0% {color: var(--link-color);}
+        50% {color: var(--link-color-active);}
+        100% {color: var(--link-color);}
+    }
+    /* ЗАПИС ДО ЛІКАРЯ */
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1205px) {
     /* ХЕДЕР */
-}
-
-@media (min-width: 1300px) {
-    /* ХЕДЕР */
+    /* ФУТЕР */
+    /* БАННЕР */
+    /* ВІТРИНА */
+    /* ЗАПИС ДО ЛІКАРЯ */
 }
