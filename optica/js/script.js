@@ -101,12 +101,17 @@ $(function(){
         })
     }
 
+    openElement($('.open-doctor_form'), $('.doctor_form'), true);
+
+    openElement($('.open_search'), $('.serch_from'), true)
+
+    openElement($('.call_me'), $('.call_form'), true);
+
     menuLinkOpen($('.mob_nav').find('a'));
     menuLinkOpen($('.header_nav > ul > li > a'));
 
     $('.header_nav > ul > li > ul').addClass('animation');
 
-    openElement($('.open-doctor_form'), $('.doctor_form'), true);
 
     $('.form_dropdown').dropdown()
 
@@ -120,7 +125,10 @@ $(function(){
         }
     })
 
-    openElement($('.open_search'), $('.serch_from'), true)
+    $('.add_wish').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active')
+    })
     
     $('.big_slider').slick({
         dots: true,
@@ -142,11 +150,6 @@ $(function(){
         slidesToShow: 1,
     });
 
-    $('.add_wish').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('active')
-    })
-
     $('.product-inner').slick({
         dots: false,
         infinite: false,
@@ -157,7 +160,7 @@ $(function(){
         mobileFirst: true,
         responsive: [
             {
-              breakpoint: 1200,
+              breakpoint: 1260,
               settings: {
                 arrows: true,
               }
@@ -165,5 +168,33 @@ $(function(){
           ]
     });
 
-    openElement($('.call_me'), $('.call_form'), true);
+    $('.services_slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [
+            {
+              breakpoint: 1260,
+              settings: {
+                arrows: true,
+              }
+            }
+          ]
+    });
+    
+    if ($(window).width() <= 1205) {
+        $('.blog_preview-slider').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            variableWidth: true,
+            arrows: false,
+            mobileFirst: true,
+        });
+    }   
 })

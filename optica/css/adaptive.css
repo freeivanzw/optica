@@ -4,6 +4,8 @@
     /* БАННЕР */
     /* ВІТРИНА */
     /* ЗАПИС ДО ЛІКАРЯ */
+    /* ПОСЛУГИ */
+    /* ПРЕВЮ БЛОГА */
 }
 
 @media (min-width: 640px) {
@@ -217,6 +219,42 @@
 
     /* ЗАПИС ДО ЛІКАРЯ */
 
+    .subscribe_box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .subscribe_box + .subscribe_box {
+        margin-top: 72px;
+    }
+
+    .subscribe_box:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .subscribe_inner {
+        flex: 0 0 calc(50% - 10px);
+        margin-bottom: 0px;
+        width: 100%;
+        transform: none;
+    }
+
+    .subscribe_box figcaption {
+        margin: 0 auto;
+        max-width: 350px;
+        padding: 0;
+    }
+
+    .subscribe_text {
+        margin-bottom: 40px;
+    }
+
+    .btn.subscribe_btn {
+        margin: 0;
+    }
+
+    /* ПОСЛУГИ */
+    /* ПРЕВЮ БЛОГА */
 }
 
 @media (min-width: 768px) {
@@ -300,9 +338,15 @@
     /* БАННЕР */
     /* ВІТРИНА */
     /* ЗАПИС ДО ЛІКАРЯ */
+    /* ПОСЛУГИ */
+    /* ПРЕВЮ БЛОГА */
+
+    .blog_slide {
+        width: 378px;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) { 
     :root {
         --section-bottom: 72px;
     }
@@ -400,10 +444,12 @@
         padding-bottom: 0;   
     }
 
-    .product-inner .slick-list {
+    /* .product-inner .slick-list {
         padding: 15px 15px 0 15px;
         margin: -15px -15px 0 -15px;
-    }
+    } */
+
+
 
     .product_slider .product_item {
         margin-bottom: 100px;
@@ -453,6 +499,8 @@
         100% {color: var(--link-color);}
     }
     /* ЗАПИС ДО ЛІКАРЯ */
+    /* ПОСЛУГИ */
+    /* ПРЕВЮ БЛОГА */
 }
 
 @media (min-width: 1205px) {
@@ -460,5 +508,30 @@
     /* ФУТЕР */
     /* БАННЕР */
     /* ВІТРИНА */
+    .product-inner .slick-list {
+        padding: 15px 0 0 0;
+        margin: -15px 0 0 0;
+    }
+
+    .product-inner .slick-track {
+        padding: 0 15px 0 15px;
+    }
     /* ЗАПИС ДО ЛІКАРЯ */
+    /* ПОСЛУГИ */
+
+    .services_slider .slick-list {
+        margin: -16px;
+        padding: 16px;
+    }
+    /* ПРЕВЮ БЛОГА */
+
+    .blog_preview-slider .slick-list {
+        margin: -16px;
+        padding: 16px;
+    }
+
+    .blog_preview-slider{
+        justify-content: space-between;
+    }
 }
+
