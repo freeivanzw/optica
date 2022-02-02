@@ -6,6 +6,42 @@
     /* ЗАПИС ДО ЛІКАРЯ */
     /* ПОСЛУГИ */
     /* ПРЕВЮ БЛОГА */
+    /* КАТАЛОГ */
+    .catalog {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog_filter {
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 92px 0 0 0;
+        flex: 0 0 184px;
+        width: 184px;
+        height: auto;
+        overflow: unset;
+        z-index: 1;
+    }
+    
+    .catalog_filter .close_btn {
+        display: none;
+    }
+
+    .filter_title {
+        display: none;
+    }
+
+    .catalog_content {
+        width: calc(100% - 200px);
+    }
+
+    .open_filter {
+        display: none;
+    }
+    /* ДЕТАЛЬНЕ ТОВАРУ */
+    /* РАЗОМ ДЕШЕВШЕ */
+    /* КОРЗИНА */
 }
 
 @media (min-width: 640px) {
@@ -85,7 +121,6 @@
         display: grid;
         grid-template-columns: 1fr max-content;
         align-items: center;
-        padding-bottom: 24px;
     }
 
     .header_nav > ul {
@@ -133,7 +168,7 @@
         background-color: var(--site-bg-color);
         box-shadow: 0px 15px 30px -15px rgba(34, 60, 80, 0.2);
         border-bottom: 1px solid var(--border-color);
-        z-index: 1;
+        z-index: 3;
     }
     
     .header_nav > ul > li > ul.animation {
@@ -146,7 +181,6 @@
     }
 
     .header_nav > ul > li > ul > .list_image-wrap {
-        /* width: 33.333%; */
         width: 50%;
         margin-right: 0;
         padding-right: 22px;
@@ -165,7 +199,6 @@
     }
     
     .header_nav > ul > li > ul > li {
-        /* width: 16.666%; */
         width: 25%;
         margin-right: auto;
     }
@@ -193,6 +226,9 @@
         border-bottom: 1px solid transparent;
     }
     /* ФУТЕР */
+    .main_banner:first-child {
+        padding-top: 24px;
+    }
     /* БАННЕР */
 
     .main_slide {
@@ -255,6 +291,23 @@
 
     /* ПОСЛУГИ */
     /* ПРЕВЮ БЛОГА */
+    /* КАТАЛОГ */
+    /* ДЕТАЛЬНЕ ТОВАРУ */
+
+    .catalog_details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details_sliders {
+        width: 48%;
+    }
+
+    .product_info {
+        width: 48%;
+    }
+    /* РАЗОМ ДЕШЕВШЕ */
+    /* КОРЗИНА */
 }
 
 @media (min-width: 768px) {
@@ -344,6 +397,73 @@
     .blog_slide {
         width: 378px;
     }
+
+    /* КАТАЛОГ */
+    .catalog_content .main_title {
+        display: inline-block;
+        width: 100%;
+        font-size: 36px;
+        line-height: 44px;
+        padding-bottom: 14px;
+        margin-bottom: 34px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .dropdown_sort {
+        display: none;
+    }
+
+    .catalog_control {
+        margin-bottom: 24px;
+    }
+
+    .decktop_sort {
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .decktop_sort > * {
+        margin-right: 45px;
+    }
+
+    .decktop_sort a {
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .decktop_sort a.active,
+    .decktop_sort a:hover {
+        border-color: var(--border-color);
+    }
+
+    .pgoduct_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pagination{
+        width: max-content;
+        margin: 0 auto 48px auto;
+    }
+    /* ДЕТАЛЬНЕ ТОВАРУ */
+    /* РАЗОМ ДЕШЕВШЕ */
+    .discount_inner {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discount_inner .product_item {
+        width: auto;
+    }
+    .discount_inner .plus, 
+    .discount_inner .sum {
+        flex: 0 0 40px;
+        margin: 0 20px;
+    }
+    /* КОРЗИНА */
 }
 
 @media (min-width: 992px) { 
@@ -482,6 +602,10 @@
         opacity: 1;
     }
 
+    .product_item:hover {
+        z-index: 2;
+    }
+
     .product_item:hover::after,
     .product_item:hover .btn,
     .product_item:hover .add_wish {
@@ -501,6 +625,108 @@
     /* ЗАПИС ДО ЛІКАРЯ */
     /* ПОСЛУГИ */
     /* ПРЕВЮ БЛОГА */
+    /* КАТАЛОГ */
+
+    .pgoduct_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pgoduct_grid {
+        margin-bottom: 48px;
+    }
+    /* ДЕТАЛЬНЕ ТОВАРУ */
+    .product_status {
+        top: 10px;
+        left: 18px;
+    }
+
+    .details_sliders {
+        width: 57.721%;
+        padding-bottom: 50px;
+    }
+
+    .btn.try_on {
+        margin-left: auto;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+
+    .product_info {
+        padding-top: 10px;
+        width: 32.405%;
+    }
+
+    .product_price .btn {
+        width: 47.916%;
+    }
+
+    .product_price .add_wish {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .details_sliders {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .small_slider {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: max-content;
+        width: 84px;
+    }
+
+    .main_slider {
+        width: calc(100% - 100px);
+        margin-bottom: 0;
+    }
+
+    .small_slide-item {
+        width: 84px;
+        height: 55px;
+        margin: 4px 0;
+    }
+
+    .small_slide-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .small_slide-item.slick-current {
+        border-color: var(--border-color);
+    }
+
+    .small_slider .slick-prev {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    
+    .small_slider .slick-next {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(-90deg);
+
+    }
+
+    .small_slide-item {
+        cursor: pointer;
+    }
+    /* РАЗОМ ДЕШЕВШЕ */
+    .discount_inner .product_photo {
+        height: 130px;
+    }
+
+    .discount_inner .plus, 
+    .discount_inner .sum {
+        margin: 0 45px;
+    }
+    /* КОРЗИНА */
 }
 
 @media (min-width: 1205px) {
@@ -533,5 +759,12 @@
     .blog_preview-slider{
         justify-content: space-between;
     }
+    /* КАТАЛОГ */
+    .catalog_content {
+        width: calc(100% - 300px);
+    }
+    /* ДЕТАЛЬНЕ ТОВАРУ */
+    /* РАЗОМ ДЕШЕВШЕ */
+    /* КОРЗИНА */
 }
 

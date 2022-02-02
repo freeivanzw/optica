@@ -72,10 +72,10 @@ $(function(){
             e.preventDefault();
 
             element.addClass('active');
+            element.addClass('close_element');
 
             if(includeShadow === true) {
                 $shadow.removeClass('hidden')  ;
-                element.addClass('close_element');
             }
         })  
     }
@@ -89,8 +89,17 @@ $(function(){
     $shadow.on('click', closeAll)
     $('.close_btn').on('click', closeAll)
 
-    openElement( $('.open_menu'), $('.mob_menu'), true)
+    openElement($('.open_menu'), $('.mob_menu'), false)
 
+    openElement($('.open-doctor_form'), $('.doctor_form'), true);
+
+    openElement($('.open_search'), $('.serch_from'), true)
+
+    openElement($('.call_me'), $('.call_form'), true);
+
+    openElement($('.open_filter'), $('.catalog_filter'), false);
+
+        
     function menuLinkOpen(links) {
         links.on('click', function (e) {
             if( $(this).next('ul').length !== 0) {
@@ -100,20 +109,16 @@ $(function(){
             }
         })
     }
-
-    openElement($('.open-doctor_form'), $('.doctor_form'), true);
-
-    openElement($('.open_search'), $('.serch_from'), true)
-
-    openElement($('.call_me'), $('.call_form'), true);
-
+    
     menuLinkOpen($('.mob_nav').find('a'));
+
     menuLinkOpen($('.header_nav > ul > li > a'));
 
     $('.header_nav > ul > li > ul').addClass('animation');
 
 
     $('.form_dropdown').dropdown()
+    $('.dropdown_sort').dropdown()
 
     $('.show_pass').on('click', function(e) {
         e.preventDefault();
@@ -128,6 +133,20 @@ $(function(){
     $('.add_wish').on('click', function(e) {
         e.preventDefault();
         $(this).toggleClass('active')
+    })
+
+    $('.filter_name').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.filter_box').toggleClass('filter_opened')
+    })
+
+    $('.filter_dropdown li a').on('click', function(e) {
+        $(this).toggleClass('active');
+    })
+
+    $('.open_piece').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.product_piece').toggleClass('active');
     })
     
     $('.big_slider').slick({
@@ -163,6 +182,9 @@ $(function(){
               breakpoint: 1260,
               settings: {
                 arrows: true,
+                variableWidth: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
               }
             }
           ]
@@ -181,6 +203,9 @@ $(function(){
               breakpoint: 1260,
               settings: {
                 arrows: true,
+                variableWidth: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
               }
             }
           ]
@@ -195,6 +220,37 @@ $(function(){
             variableWidth: true,
             arrows: false,
             mobileFirst: true,
+            
         });
-    }   
+    } 
+    
+    $('.main_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        dots: true,
+        mobileFirst: true,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                arrows: false,
+                dots: false,
+              }
+            }
+          ],
+        asNavFor: '.small_slider'
+      });
+      $('.small_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.main_slider',
+        dots: false,
+        arrows: true,
+        centerMode: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+      });
 })
