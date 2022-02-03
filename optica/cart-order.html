@@ -25,54 +25,8 @@
                         <a href="tel:380985811623">098 94 84 636</a>
                         <a href="#" class="call_me">Передзвоніть мені</a>
                     </div>
-                    <div class="toggle_language">
-                        <a href="#" class="active">УКР</a>
-                        <a href="#">РУС</a>
-                    </div>
-                    <div class="serch_wrap">
-                        <a href="#" class="header_icon open_search"><svg class="icon"><use xlink:href="/images/sprite.svg#search"></use></svg></a>
-                        <form class="serch_from">
-                            <button type="submit" class="search_btn"><svg class="icon"><use xlink:href="/images/sprite.svg#search"></use></svg></button>
-                            <input type="text">
-                        </form>
-                    </div>
-                    <a href="#" class="header_icon"><svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg></a>
-                    <a href="#" class="header_icon"><svg class="icon"><use xlink:href="/images/sprite.svg#user"></use></svg></a>
-                    <a href="#" class="header_icon header_icon-active"><span class="cart_counter">1</span><svg class="icon"><use xlink:href="/images/sprite.svg#cart"></use></svg></a>
-                    <a href="#" class="open_menu"><i>open menu</i></a>
                 </div>
             </div>
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="#">Сонцезахисні окуляри</a></li>
-                    <li>
-                        <a href="#">Оправи</a>
-                        <ul>
-                            <li class="list_image-wrap">
-                                <a href="#"><img src="./images/menu_banner.webp" width="362" height="344" alt="banner"></a>
-                            </li>
-                            <li><a href="#">Оправи</a></li>
-                            <li>
-                                <a href="#">Оправи</a>
-                                <ul>
-                                    <li><a href="#">test test test</a></li>
-                                    <li><a href="#">test test test</a></li>
-                                    <li><a href="#">test test test</a></li>
-                                    <li><a href="#">test test test</a></li>
-                                    <li><a href="#">test test test</a></li>
-                                    <li><a href="#">test test</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Оправи</a></li>
-                            <li><a href="#">Оправи</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Контактні лінзи</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Більше</a></li>
-                </ul>
-                <a href="#" class="btn open-doctor_form">Запис до лікаря</a>
-            </nav>
         </div>
         
         <div class="mob_menu">
@@ -115,38 +69,103 @@
     </header>
     <main>
         <div class="centre">
-            <ul class="clickpath">
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Що цікавого у нових колекціях</a></li>
-            </ul>
-            <!-- СТАТТЯ -->
-            <article class="blog_details">
-                <header>
-                    <h1>що цікавого у нових колекціях брендових сонцезахисних окулярів?</h1>
-                    <time datetime="2021-12-23T10:00">23.12.2021 10:00</time>
-                </header>
-                <img src="./images/blog-big-photo.jpg" class="blog_main-photo" alt="photo big">
-                <div class="blog_content">
-                    <p><a href="#">На календарі, </a>між іншим, вже кінець грудня! А всі ми добре знаємо, що це означає — запальна метушня у пошуках подарунків до різдвяно-новорічних свят. Є так мало часу, і так багато дилем:  </p>
-                    <ul>
-                        <li>що ж подарувати тій самій подрузі чи другу з найвибагливішим смаком?</li>
-                        <li>чим цьогоріч потішити рідних?</li>
-                        <li>ну і врешті-решт, який презент зробити собі коханому(-ій)?</li>
-                    </ul>    
-                    <p>Спішимо на допомогу з підбіркою окулярів Ray-Ban — сміливо використовуйте її як гайд по крутим подарункам для всіх і кожного. </p> 
-                    <p>
-                        Ray-Ban — це завжди про індивідуальність, спонтанність, впевненість у собі та власній неповторності. Можна ще довго й красномовно розповідати про цей бренд, але давайте якнайшвидше перейдемо до нашого гайду!
-                    </p>
-                    <img src="./images/blog-small-photo.png" alt="photo small">
-                    <p>
-                        Культові моделі для справжніх легенд<br>
-                        Просто одягніть окуляри Ray-Ban, просто Make it iconic! Всім модникам і модницям добре відома універсальна формула стилю: 
-                    </p>
-                    <p>олдскульні форми + актуальний дизайн + трендові колірні рішення.</p>
-                    <p>Саме так можна описати легендарні сонцезахисні окуляри RAY-BAN ORIGINAL WAYFARER CLASSIC (код моделі — RB2140 901), що утримують популярність вже не одне десятиліття. Вони стануть вдалим подарунком навіть для тих, кому ду-у-уже важко догодити. </p>
+            <!-- ОФОРМЛЕННЯ ЗАМОВЛЕННЯ -->
+            <section class="cart_order">
+                <span class="sub_title">Оформлення замовлення</span>
+                <form>
+                    <div class="cart_column">
+                        <span class="cart_title">Кошик</span>
+                        <div class="cart_product">
+                            <a href="#" class="cart_product-img"><img src="./images/details_photo.webp" alt="product"></a>
+                            <div class="product-cart_info">
+                                <a href="#" class="product_name">Сонцезахисні окуляри Сонцезахисні окуляри</a>
+                                <span class="product_code">Артикул: RB0808525</span>
+                                <div class="product_color">
+                                    <span>Колір:</span>
+                                    <div class="color_selected" style="background-color: gray;"></div>
+                                </div>
+                                <div class="cart_product-price">
+                                    <span>1 шт</span>
+                                    <span>2500 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="cart_total">Всьго: 2500 грн</span>
+                        <a href="#" class="edit_order">Редагувати замовлення</a>
+                    </div>
+                    <div class="cart_column">
+                        <span class="cart_title">Контактні дані</span>
+                        <label class="form_inner">
+                            <span class="from_caption">Ваше прізвище <i class="important_text">*</i></span>
+                            <div class="form_input-wrap">
+                                <input type="text" placeholder="Напишіть своє прізвище">
+                            </div>
+                        </label>
+                        <label class="form_inner">
+                            <span class="from_caption">Ваше ім'я <i class="important_text">*</i></span>
+                            <div class="form_input-wrap">
+                                <input type="text" placeholder="Напишіть своє ім'я">
+                            </div>
+                        </label>
+                        <label class="form_inner">
+                            <span class="from_caption">По батькові</span>
+                            <div class="form_input-wrap">
+                                <input type="text" placeholder="Напишіть по батькові">
+                            </div>
+                        </label>
+                        <label class="form_inner">
+                            <span class="from_caption">Введіть Email</span>
+                            <div class="form_input-wrap">
+                                <input type="email" placeholder="Напишіть свій Email">
+                            </div>
+                        </label>
+                        <label class="form_inner">
+                            <span class="from_caption">Ваш номер телефону <i class="important_text">*</i></span>
+                            <div class="form_input-wrap">
+                                <input type="tel" placeholder="Напишіть номер телефону">
+                            </div>
+                        </label>
+                        <span class="info_form"><i class="important_text">*</i> - Поля обов’язкові для заповнення</span>
+                    </div>
+                    <div class="cart_column">
+                        <span class="cart_title">Доставка та оплата</span>
+                        <label class="form_inner">
+                            <span class="from_caption">Місто</span>
+                            <div class="form_input-wrap">
+                                <input type="text" placeholder="Виберіть місто зі списку">
+                            </div>
+                        </label>
+                        <div class="form_inner">
+                            <span class="from_caption">Спосіб доставки</span>
+                            <div class="dropdown form_dropdown">
+                                <div class="overflow"><span>Оберіть спосіб доставки</span><button type="button" class="drop_arrow"></button></div>
+                                <ul>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form_inner">
+                            <span class="from_caption">Спосіб оплати</span>
+                            <div class="dropdown form_dropdown">
+                                <div class="overflow"><span>Оберіть спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
+                                <ul>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                    <li><a href="#">Нова Пошта</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Замовлення підтверджую</button>
+                    </div>
+                </form>
+                <div class="cart_completed active">
+                    <span>Замовлення успішно відправленно</span>
                 </div>
-            </article>
+            </section>
         </div>
 
         <a href="#" class="shadow hidden">close</a>
