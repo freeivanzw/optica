@@ -336,6 +336,22 @@ article a {
 	border-bottom: 1px solid var(--border-color)
 }
 
+article li {
+	position: relative;
+	padding-left: 10px;
+}
+
+article li::before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: var(--text-color);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
+
 a:active {
 	color: inherit;  /* НЕ УДАЛЯТИ */
 }
@@ -1924,6 +1940,18 @@ a.sub_title:hover {
 	margin-bottom: 26px;
 }
 
+.main_title.search_title {
+	margin-bottom: 15px;
+}
+
+.search_counter {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 22px;
+}
+
 .catalog_control {
 	display: flex;
 	justify-content: space-between;
@@ -2717,4 +2745,139 @@ a.sub_title:hover {
 
 .cart .btn {
 	margin-left: 40px;
+}
+
+/* БЛОГ */
+
+.blog_list {
+	padding-bottom: var(--section-bottom);
+}
+
+.blog_list .main_title {
+	text-transform: none;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
+	width: 100%;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.blog_categories {
+	display: flex;
+	margin-bottom: 50px;
+	max-width: 100%;
+	overflow: auto;
+}
+
+.blog_categories a {
+	display: inline-block;
+	text-decoration: none;
+	white-space: nowrap;
+	color: var(--link-color);
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	transition: color 0.3s;
+}
+
+.blog_categories a:hover {
+	color: var(--link-color-active)
+}
+
+.blog_categories li + li {
+	margin-left: 48px;
+}
+
+.blog_categories a.active {
+	border-bottom: 1px solid var(--text-color);
+}
+
+.blog_categories a.active:hover {
+	color: var(--link-color);
+	/* pointer-events: none; */
+	cursor: unset;
+}
+
+.blog_grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 15px;
+}
+
+.blog_images {
+	display: block;
+	width: 100%;
+	height: 160px;
+}
+
+.blog_images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blog_item figcaption {
+	display: flex;
+	flex-direction: column;
+	padding: 18px;
+	background-color: #2CAC70;
+}
+
+.blog_title {
+	color: var(--text-contrast);
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 8px;
+}
+
+.blog_title:hover {
+	text-decoration: underline;
+}
+
+.blog_text {
+	color: var(--text-contrast);
+	font-size: 12px;
+	line-height: 15px;
+}
+
+/* СТАТТЯ */
+
+.blog_details {
+	padding-bottom: var(--section-bottom);
+}
+
+.blog_details img {
+	max-width: 100%;
+}
+
+.blog_details header  {
+	margin-bottom: 24px;
+}
+
+.blog_details header h1 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.blog_main-photo {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 48px;
+}
+
+.blog_content {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 586px;
+}
+
+.blog_content > * {
+	margin-bottom: 20px;
+}
+
+.blog_content img {
+	margin: 40px 0;
 }

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/adaptive.css" media="screen and (min-width:480px)">
+    <title>Techno optyka</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="site_header">
+        <div class="centre">
+            <div class="top_header">
+                <a href="#" class="logo_wrap"><svg class="logo"><use xlink:href="/images/sprite.svg#logo"></use></svg></a>
+                <div class="header_panel">
+                    <div class="call_back">
+                        <a href="tel:380985811623">098 94 84 636</a>
+                        <a href="#" class="call_me">Передзвоніть мені</a>
+                    </div>
+                    <div class="toggle_language">
+                        <a href="#" class="active">УКР</a>
+                        <a href="#">РУС</a>
+                    </div>
+                    <div class="serch_wrap">
+                        <a href="#" class="header_icon open_search"><svg class="icon"><use xlink:href="/images/sprite.svg#search"></use></svg></a>
+                        <form class="serch_from">
+                            <button type="submit" class="search_btn"><svg class="icon"><use xlink:href="/images/sprite.svg#search"></use></svg></button>
+                            <input type="text">
+                        </form>
+                    </div>
+                    <a href="#" class="header_icon"><svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg></a>
+                    <a href="#" class="header_icon"><svg class="icon"><use xlink:href="/images/sprite.svg#user"></use></svg></a>
+                    <a href="#" class="header_icon header_icon-active"><span class="cart_counter">1</span><svg class="icon"><use xlink:href="/images/sprite.svg#cart"></use></svg></a>
+                    <a href="#" class="open_menu"><i>open menu</i></a>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#">Сонцезахисні окуляри</a></li>
+                    <li>
+                        <a href="#">Оправи</a>
+                        <ul>
+                            <li class="list_image-wrap">
+                                <a href="#"><img src="./images/menu_banner.webp" width="362" height="344" alt="banner"></a>
+                            </li>
+                            <li><a href="#">Оправи</a></li>
+                            <li>
+                                <a href="#">Оправи</a>
+                                <ul>
+                                    <li><a href="#">test test test</a></li>
+                                    <li><a href="#">test test test</a></li>
+                                    <li><a href="#">test test test</a></li>
+                                    <li><a href="#">test test test</a></li>
+                                    <li><a href="#">test test test</a></li>
+                                    <li><a href="#">test test</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Оправи</a></li>
+                            <li><a href="#">Оправи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контактні лінзи</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Більше</a></li>
+                </ul>
+                <a href="#" class="btn open-doctor_form">Запис до лікаря</a>
+            </nav>
+        </div>
+        
+        <div class="mob_menu">
+            <div class="header_menu">
+                <div class="toggle_language">
+                    <a href="#" class="active">УКР</a>
+                    <a href="#">РУС</a>
+                </div>
+                <ul class="menu_phones">
+                    <li><a href="tel:380985811623">098 94 84 636</a></li>
+                </ul>
+                <a href="#" class="close_btn mob_close">close menu</a>
+            </div>
+            <ul class="mob_nav">
+                <li><a href="#">Сонцезахисні</a></li>
+                <li>
+                    <a href="#">Блог</a>
+                    <ul>
+                        <li><a href="#">test test test</a></li>
+                        <li><a href="#">test test test</a></li>
+                        <li><a href="#">test test test</a></li>
+                        <li><a href="#">test test test</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контактні лінзи</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="btn appointment_doctor">Записатись до лікаря</a>
+            <ul class="bottom_menu">
+                <li><a href="#">Наші лікарі</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Відгуки</a></li>
+                <li><a href="#">Часто запитують</a></li>
+                <li><a href="#">Бонусна програма</a></li>
+                <li><a href="#">Сертифікати</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="centre">
+            <ul class="clickpath">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Пошук</a></li>
+            </ul>
+            <!-- КАТАЛОГ -->
+            <section class="catalog">
+                <aside class="catalog_filter close_element">
+                    <a href="#" class="close_btn">close</a>
+                    <span class="filter_title">Оберіть фільтри</span>
+
+                    <div class="filter_box filter_opened">
+                        <a href="#" class="filter_name">Ціна</a>
+                        <div class="filter_dropdown">
+                            <div class="filter_price">
+                                <div class="price_wrap">
+                                    <label class="input_wrap">
+                                        <span>від</span>
+                                        <input type="text">
+                                    </label>
+                                    <span>-</span>
+                                    <label class="input_wrap">
+                                        <span>до</span>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <!-- сюди треба впихнути сладйер -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_box filter_opened">
+                        <a href="#" class="filter_name">Бренд</a>
+                        <div class="filter_dropdown">
+                            <ul>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#" class="active">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                            </ul>
+                            <a href="#" class="open_more-filters">Показати всі 20</a>
+                        </div>
+                    </div>
+                    <div class="filter_box filter_opened">
+                        <a href="#" class="filter_name">Бренд</a>
+                        <div class="filter_dropdown">
+                            <ul>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                            </ul>
+                            <a href="#" class="open_more-filters">Показати всі 20</a>
+                        </div>
+                    </div>
+                    <div class="filter_box">
+                        <a href="#" class="filter_name">Бренд</a>
+                        <div class="filter_dropdown">
+                            <ul>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                            </ul>
+                            <a href="#" class="open_more-filters">Показати всі 20</a>
+                        </div>
+                    </div>
+                    <div class="filter_box">
+                        <a href="#" class="filter_name">Бренд</a>
+                        <div class="filter_dropdown">
+                            <ul>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                            </ul>
+                            <a href="#" class="open_more-filters">Показати всі 20</a>
+                        </div>
+                    </div>
+                    <div class="filter_box">
+                        <a href="#" class="filter_name">Бренд</a>
+                        <div class="filter_dropdown">
+                            <ul>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                                <li><a href="#">Ray Ban</a></li>
+                            </ul>
+                            <a href="#" class="open_more-filters">Показати всі 20</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn">Показати</a>
+                </aside>
+                <div class="catalog_content">
+                    <span class="main_title search_title">Пошук по: Сонцезахисні окуляри</span>
+                    <span class="search_counter">Знайдено 555 шт</span>
+                    <div class="catalog_control">
+                        <div class="dropdown dropdown_sort">
+                            <div class="overflow"><span>Сортування</span><button type="button" class="drop_arrow"></button></div>
+                            <ul>
+                                <li><a href="#" >Спочатку дорожчі</a></li>
+                                <li><a href="#" >Спочатку дешеві</a></li>
+                                <li><a href="#" >Найновіші</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="open_filter">Фільтри</a>
+                        <div class="decktop_sort">
+                            <b>Сортування:</b>
+                            <a href="#">Найновіші</a>
+                            <a href="#" class="active">Спочатку дешеві</a>
+                            <a href="#">Спочатку дорожчі</a>
+                        </div>
+                    </div>
+                    <ul class="pgoduct_grid">
+                        <li>
+                            <figure class="product_item">
+                                <div class="status_wrap">
+                                    <span>Новинка</span>
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="add_wish">
+                                    <svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg>
+                                    <svg class="icon fill_icon"><use xlink:href="/images/sprite.svg#heart-fill"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-photo.webp" width="196" height="130" alt="product"></a>
+                                <figcaption>
+                                    <a href="#" class="product_link">Сонцезахисні окуляри 874324-81</a>
+                                    <div class="price_product">
+                                        <span>2039 грн</span>
+                                        <del>2300 грн</del>
+                                    </div>
+                                    <a href="#" class="btn">В корзину</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="product_item">
+                                <div class="status_wrap">
+                                    <span>Новинка</span>
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="add_wish">
+                                    <svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg>
+                                    <svg class="icon fill_icon"><use xlink:href="/images/sprite.svg#heart-fill"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-photo.webp" width="196" height="130" alt="product"></a>
+                                <figcaption>
+                                    <a href="#" class="product_link">Сонцезахисні окуляри 874324-81</a>
+                                    <div class="price_product">
+                                        <span>2039 грн</span>
+                                        <del>2300 грн</del>
+                                    </div>
+                                    <a href="#" class="btn">В корзину</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="product_item">
+                                <div class="status_wrap">
+                                    <span>Новинка</span>
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="add_wish">
+                                    <svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg>
+                                    <svg class="icon fill_icon"><use xlink:href="/images/sprite.svg#heart-fill"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-photo.webp" width="196" height="130" alt="product"></a>
+                                <figcaption>
+                                    <a href="#" class="product_link">Сонцезахисні окуляри 874324-81</a>
+                                    <div class="price_product">
+                                        <span>2039 грн</span>
+                                        <del>2300 грн</del>
+                                    </div>
+                                    <a href="#" class="btn">В корзину</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="product_item">
+                                <div class="status_wrap">
+                                    <span>Новинка</span>
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="add_wish">
+                                    <svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg>
+                                    <svg class="icon fill_icon"><use xlink:href="/images/sprite.svg#heart-fill"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-photo.webp" width="196" height="130" alt="product"></a>
+                                <figcaption>
+                                    <a href="#" class="product_link">Сонцезахисні окуляри 874324-81</a>
+                                    <div class="price_product">
+                                        <span>2039 грн</span>
+                                        <del>2300 грн</del>
+                                    </div>
+                                    <a href="#" class="btn">В корзину</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="product_item">
+                                <div class="status_wrap">
+                                    <span>Новинка</span>
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="add_wish">
+                                    <svg class="icon"><use xlink:href="/images/sprite.svg#heart"></use></svg>
+                                    <svg class="icon fill_icon"><use xlink:href="/images/sprite.svg#heart-fill"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-photo.webp" width="196" height="130" alt="product"></a>
+                                <figcaption>
+                                    <a href="#" class="product_link">Сонцезахисні окуляри 874324-81</a>
+                                    <div class="price_product">
+                                        <span>2039 грн</span>
+                                        <del>2300 грн</del>
+                                    </div>
+                                    <a href="#" class="btn">В корзину</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <a href="#" class="to_load">
+                        <svg class="icon"><use xlink:href="/images/sprite.svg#to-load"></use></svg>
+                        Показати ще
+                    </a>
+                    <div class="pagination">
+                        <a href="#" class="arrow_pag arrow_pag-prew not_active"></a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="active">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">21</a></li>
+                        </ul>
+                        <a href="#" class="arrow_pag arrow_pag-next"></a>
+                    </div>
+                    <article class="caralog_article">
+                        <b>НАВІЩО ПОТРІБНІ СОНЦЕЗАХИСНІ ОКУЛЯРИ</b>
+                        <p>Сонце завжди асоціюється у нас з чимось позитивним: з прекрасним відпочинком в теплих країнах і з хорошим настроєм. Однак не слід забувати, що сонячні промені несуть в собі небезпеку для нашої шкіри і очей. Яскраві промені змушують нас мружитися, сприяючи появі зморшок, а ультрафіолет негативно впливає на кришталик і сітківку очей, викликаючи незворотні пошкодження органів зору.</p>
+                        <p>Головною поширеною помилкою є впевненість в тому, що негативний вплив UV-променів можливий тільки в яскравий сонячний день. Однак найбільшу порцію ультрафіолету ми отримуємо саме в ранкові та вечірні години, коли сонячні промені розташовуються на рівні наших очей. Крім того, небо, затягнуте хмарами, практично не затримує промені ультрафіолету, на відміну від променів видимого спектру. Кожен, хто тривалий час перебуває на відкритому повітрі, зобов'язаний подбати про захист очей від UV-променів. І чим якісніше буде цей захист, тим краще будуть почувати себе ваші очі.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <a href="#" class="shadow hidden">close</a>
+
+        <form class="form_box popup doctor_form">
+            <a href="#" class="close_btn">close popup</a>
+            <span class="sub_title">Запис до лікаря</span>
+            <div class="form_inner">
+                <span class="from_caption">Лікар</span>
+                <div class="dropdown form_dropdown">
+                    <div class="overflow"><span>Оберіть лікаря</span><button type="button" class="drop_arrow"></button></div>
+                    <ul>
+                        <li><a href="#" >Нова Пошта</a></li>
+                        <li><a href="#" >Нова Пошта</a></li>
+                        <li><a href="#" >Нова Пошта</a></li>
+                        <li><a href="#" >Нова Пошта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form_inner">
+                <span class="from_caption">Оптика</span>
+                <div class="dropdown form_dropdown">
+                    <div class="overflow"><span>Оберіть оптику</span><button type="button" class="drop_arrow"></button></div>
+                    <ul>
+                        <li><a href="#" >Нова Пошта</a></li>
+                        <li><a href="#" >Нова Пошта</a></li>
+                        <li><a href="#" >Нова Пошта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <label class="form_inner">
+                <span class="from_caption">Дата</span>
+                <div class="form_input-wrap">
+                    <input type="date" placeholder="Оберіть дату">
+                    <svg class="icon"><use xlink:href="/images/sprite.svg#time"></use></svg>
+                </div>
+            </label>
+            <label class="form_inner">
+                <span class="from_caption">Час</span>
+                <div class="form_input-wrap">
+                    <input type="time" placeholder="Оберіть час">
+                    <svg class="icon"><use xlink:href="/images/sprite.svg#time"></use></svg>
+                </div>
+            </label>
+            <label class="form_inner">
+                <span class="from_caption">Ваше ім'я</span>
+                <div class="form_input-wrap">
+                    <input type="text" placeholder="Напишіть своє ім'я">
+                    <svg class="icon"><use xlink:href="/images/sprite.svg#user"></use></svg>
+                </div>
+            </label>
+            <button type="submit" class="btn">Надіслати</button>
+        </form>
+
+        <form class="form_box popup call_form">
+            <a href="#" class="close_btn">close popup</a>
+            <span class="sub_title">Запис до лікаря</span>
+            <label class="form_inner">
+                <span class="from_caption">Ваше ім'я</span>
+                <div class="form_input-wrap">
+                    <input type="text" placeholder="Напишіть своє ім'я">
+                    <svg class="icon"><use xlink:href="/images/sprite.svg#user"></use></svg>
+                </div>
+            </label>
+            <label class="form_inner">
+                <span class="from_caption">Ваш номер телефону</span>
+                <div class="form_input-wrap">
+                    <input type="text" placeholder="Напишіть номер телефону">
+                    <svg class="icon"><use xlink:href="/images/sprite.svg#phone"></use></svg>
+                </div>
+            </label>
+            <button type="submit" class="btn">Надіслати</button>
+        </form>
+    </main>
+    <footer class="site_footer">
+        <div class="centre">
+            <div class="footer_top">
+                <ul class="footer_menu">
+                    <li>
+                        <a href="#">Допомога</a>
+                        <ul>
+                            <li><a href="#">Часто запитують</a></li>
+                            <li><a href="#">Залишити відгук</a></li>
+                            <li><a href="#">Поставити запитання</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Додаткова інформація</a>
+                        <ul>
+                            <li><a href="#">Угода користувача</a></li>
+                            <li><a href="#">Вакансії</a></li>
+                            <li><a href="#">Бонусна програма</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Особистий кабінет</a>
+                        <ul>
+                            <li><a href="#">Увійти в кабінет</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_time">
+                    <div class="work_wrap">
+                        <span class="footer_title">Графік роботи</span>
+                        <span class="footer_text">ПН - Пт - 09:00-19:00<br>СБ - 09:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_boottom">
+                <a class="footer_logo"><svg class="logo"><use xlink:href="/images/sprite.svg#logo"></use></svg></a>
+                <div class="copyright_wrap">
+                    <span class="confident">© 2021 Всі права захищені</span>
+                    <span class="copyright"><a href="https://websufix.com/e-commerce">Створення інтернет магазину</a><a href="https://websufix.com"> веб студія</a> SUFIX</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+		jQuery.event.special.touchstart = {
+			setup: function( _, ns, handle ) {
+				this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+			}
+		};
+		jQuery.event.special.touchmove = {
+			setup: function( _, ns, handle ) {
+				this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+			}
+		};
+		jQuery.event.special.wheel = {
+			setup: function( _, ns, handle ){
+				this.addEventListener("wheel", handle, { passive: true });
+			}
+		};
+		jQuery.event.special.mousewheel = {
+			setup: function( _, ns, handle ){
+				this.addEventListener("mousewheel", handle, { passive: true });
+			}
+		};
+	</script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

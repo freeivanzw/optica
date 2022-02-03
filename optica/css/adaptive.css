@@ -75,6 +75,8 @@
         display: inline-block;
         min-width: max-content;
     }
+    /* БЛОГ */
+    /* СТАТТЯ */
 }
 
 @media (min-width: 640px) {
@@ -341,6 +343,11 @@
     }
     /* РАЗОМ ДЕШЕВШЕ */
     /* КОРЗИНА */
+    /* БЛОГ */
+    .blog_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* СТАТТЯ */
 }
 
 @media (min-width: 768px) {
@@ -442,6 +449,18 @@
         border-bottom: 1px solid var(--border-color);
     }
 
+    .main_title.search_title {
+        border: none;
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+
+    .search_counter {
+        padding-bottom: 14px;
+        margin-bottom: 34px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
     .dropdown_sort {
         display: none;
     }
@@ -497,6 +516,8 @@
         margin: 0 20px;
     }
     /* КОРЗИНА */
+    /* БЛОГ */
+    /* СТАТТЯ */
 }
 
 @media (min-width: 992px) { 
@@ -760,6 +781,11 @@
         margin: 0 45px;
     }
     /* КОРЗИНА */
+    /* БЛОГ */
+    .blog_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* СТАТТЯ */
 }
 
 @media (min-width: 1205px) {
@@ -799,5 +825,7 @@
     /* ДЕТАЛЬНЕ ТОВАРУ */
     /* РАЗОМ ДЕШЕВШЕ */
     /* КОРЗИНА */
+    /* БЛОГ */
+    /* СТАТТЯ */
 }
 
