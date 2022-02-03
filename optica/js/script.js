@@ -241,8 +241,8 @@ $(function(){
             }
           ],
         asNavFor: '.small_slider'
-      });
-      $('.small_slider').slick({
+    });
+    $('.small_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.main_slider',
@@ -252,5 +252,7 @@ $(function(){
         focusOnSelect: true,
         vertical: true,
         verticalSwiping: true,
-      });
+    });
+
+    
 })
