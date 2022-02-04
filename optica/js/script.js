@@ -148,6 +148,11 @@ $(function(){
         e.preventDefault();
         $(this).closest('.product_piece').toggleClass('active');
     })
+
+    $('.question_title').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.question_item').toggleClass('question_opened');
+    })
     
     $('.big_slider').slick({
         dots: true,

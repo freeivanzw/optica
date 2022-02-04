@@ -80,6 +80,7 @@
     /* ОФОРМЛЕННЯ ЗАМОВЛЕННЯ */
     /* СПИСОК ЛІКАРІВ */
     /* ДЕТАЛЬНЕ ЛІКАРЯ */
+    /* ЧАСТО ЗАПИТУЮТЬ */
 }
 
 @media (min-width: 640px) {
@@ -354,6 +355,47 @@
     /* ОФОРМЛЕННЯ ЗАМОВЛЕННЯ */
     /* СПИСОК ЛІКАРІВ */
     /* ДЕТАЛЬНЕ ЛІКАРЯ */
+    .doctors_info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .doctors_photo {
+        max-width: 384px;
+        width: 55%;
+    }
+
+    .doctor_text {
+        max-width: 284px;
+        width: 40%;
+    }
+    /* ЧАСТО ЗАПИТУЮТЬ */
+    /* КОНТАКТИ */
+    .contacts_inner {
+        display: grid;
+        grid-template-columns: minmax(0, 336px) 1fr;
+        grid-column-gap: 20px;
+    }
+    /* ОБМІН І ПОВЕРНЕННЯ */ 
+    .exchange_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .exchange_text {
+        margin-bottom: 0;
+    }
+    /* ОПЛАТА ТА ДОСТАВКА */
+
+    .delivery_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ВАКАНСІЇ */
+    .vacancies_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
@@ -527,6 +569,31 @@
     /* ОФОРМЛЕННЯ ЗАМОВЛЕННЯ */
     /* СПИСОК ЛІКАРІВ */
     /* ДЕТАЛЬНЕ ЛІКАРЯ */
+    /* ЧАСТО ЗАПИТУЮТЬ */
+    /* ОПЛАТА ТА ДОСТАВКА */
+
+    .delivery_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* ВАКАНСІЇ */
+    .vacancies_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* БОНУСНА ПРОГРАМА */
+
+    .bonus_grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bonus_images {
+        width: calc(50% - 8px);
+    }
+
+    .bonus_cards {
+        width: calc(50% - 8px);
+    }
 }
 
 @media (min-width: 992px) { 
@@ -809,6 +876,22 @@
     }
     /* СПИСОК ЛІКАРІВ */
     /* ДЕТАЛЬНЕ ЛІКАРЯ */
+    /* ЧАСТО ЗАПИТУЮТЬ */
+    /* ВАКАНСІЇ */
+    .vacancies_title {
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 32px;
+    }
+    /* ВАКАНСІЇ */
+    .vacancies_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* БОНУСНА ПРОГРАМА */
+    .bonus_cards {
+        height: max-content;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1205px) {
@@ -853,5 +936,5 @@
     /* ОФОРМЛЕННЯ ЗАМОВЛЕННЯ */
     /* СПИСОК ЛІКАРІВ */
     /* ДЕТАЛЬНЕ ЛІКАРЯ */
+    /* ЧАСТО ЗАПИТУЮТЬ */
 }
-
