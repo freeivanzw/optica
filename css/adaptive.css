@@ -433,6 +433,9 @@
 
     .abut-us_list figcaption {
         flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     /* СТОРІНКА КОРИСТУВАЧА */
     .user_wish {
