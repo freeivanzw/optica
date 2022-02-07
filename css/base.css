@@ -2920,6 +2920,7 @@ a.sub_title:hover {
 /* ОФОРМЛЕННЯ ЗАМОВЛЕННЯ */
 
 .cart_order {
+	padding-top: 20px;
 	padding-bottom: var(--section-bottom);
 }
 
