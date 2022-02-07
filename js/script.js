@@ -99,7 +99,8 @@ $(function(){
 
     openElement($('.open_filter'), $('.catalog_filter'), false);
 
-        
+    openElement($('.open_user_menu'), $('.about_us-menu'), false);
+
     function menuLinkOpen(links) {
         links.on('click', function (e) {
             if( $(this).next('ul').length !== 0) {
@@ -258,6 +259,11 @@ $(function(){
         vertical: true,
         verticalSwiping: true,
     });
-
     
+    $('ul.tabs_caption').on('click', 'li:not(.active)', function() {
+        $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs_content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
 })
