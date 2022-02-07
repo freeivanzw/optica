@@ -2880,6 +2880,7 @@ a.sub_title:hover {
 
 .blog_details img {
 	max-width: 100%;
+	height: auto;
 }
 
 .blog_details header  {
