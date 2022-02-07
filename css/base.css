@@ -3085,6 +3085,7 @@ a.sub_title:hover {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 18px;
+	color: var(--link-color);
 	display: inline-block;
 	margin-bottom: 8px;
 	transition: color 0.3s;
@@ -3093,6 +3094,16 @@ a.sub_title:hover {
 .doctor_name:hover {
 	color: var(--link-color-active);
 }
+
+span.doctor_name {
+	cursor: none;
+}
+
+span.doctor_name:hover {
+	color: var(--link-color);
+	cursor: none;
+}
+
 
 .doctor_profession {
 	font-size: 14px;
@@ -3638,4 +3649,57 @@ a.sub_title:hover {
 .bonus_text {
 	font-size: 14px;
 	line-height: 17px;
+}
+
+/* ПРО НАС */
+
+.about_us {
+	margin: 0 auto;
+	padding-bottom: var(--section-bottom);
+	width: 100%;
+	max-width: 784px;
+}
+
+.main_title {
+	text-transform: none;
+	width: 100%;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.abut-us_list {
+	border-bottom: 1px solid #1f1f1f;
+	margin-bottom: 32px;
+}
+
+.about_us-img {
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.about_us-img img {
+	display: block;
+	width: 100%;
+}
+
+.abut-us_list figure {
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+.abut-us_list h3  {
+	font-weight: 24px;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+
+.abut-us_list p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.abut-us_list + .main_title {
+	padding-bottom: 0;
+	border-bottom: none;
 }

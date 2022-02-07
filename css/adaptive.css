@@ -396,6 +396,33 @@
     .vacancies_list {
         grid-template-columns: repeat(2, 1fr);
     }
+    /* ПРО НАС */
+    .abut-us_list figure {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .abut-us_list figure:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .abut-us_list figure:nth-child(odd) .figcaption {
+        padding-right: 16px;
+    }
+
+    .abut-us_list figure:nth-child(even) .figcaption {
+        padding-left: 16px;
+    }
+
+    .about_us-img {
+        flex: 0 0 50%;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .abut-us_list figcaption {
+        flex: 0 0 50%;
+    }
 }
 
 @media (min-width: 768px) {
