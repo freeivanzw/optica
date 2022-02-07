@@ -3308,7 +3308,10 @@ span.doctor_name:hover {
 }
 
 .comments_header .main_title {
+	padding-bottom: 0;
 	margin: 0 15px 0 0;
+	max-width: max-content;
+	border-bottom: none;
 }
 
 .comments_header .btn {
