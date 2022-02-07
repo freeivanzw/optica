@@ -87,6 +87,11 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 16px;
     }
+
+    .bonus_card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 640px) {
@@ -430,6 +435,9 @@
         flex: 0 0 50%;
     }
     /* СТОРІНКА КОРИСТУВАЧА */
+    .user_wish {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 768px) {
@@ -655,6 +663,47 @@
     .user_panel {
         padding-left: 30px;
         width: calc(100% - 284px);
+    }
+
+    .user_orders header {
+        display: flex;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .orders_item {
+        flex-direction: row;
+        padding-bottom: 0;
+        margin-bottom: 34px;
+        border-bottom: none;
+    }
+
+    .orders_time {
+        flex: 0 0 23%;
+        width: 23%;
+        padding-right: 10px;
+    }
+    
+    .orders_product {
+        flex: 0 0 34%;
+        width: 34%;
+        padding-right: 10px;
+    }
+    
+    .orders_sum {
+        flex: 0 0 23%;
+        width: 23%;
+        padding-right: 10px;
+    }
+
+    .orders_status {
+        flex: 0 0 20%;
+        width: 20%;
+    }
+
+    .user_wish {
+       grid-template-columns: 1fr;
     }
 }
 
@@ -973,6 +1022,14 @@
     .social_connect a .icon {
         margin-right: 55px;
     }
+
+    .bonus_balance {
+        min-width: 336px;
+    }
+
+    .user_wish {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1205px) {
@@ -1021,5 +1078,9 @@
     /* СТОРІНКА КОРИСТУВАЧА */
     .user_panel {
         padding-left: 116px;
+    }
+
+    .user_wish {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
