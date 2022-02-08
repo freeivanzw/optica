@@ -1810,8 +1810,8 @@ a.sub_title:hover {
 }
 
 .services_slider:not(.slick-initialized) {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-gap: 16px;
 }
 
 
@@ -1831,7 +1831,9 @@ a.sub_title:hover {
 	display: flex;
 	flex-direction: column;
 	padding: 40px 40px 38px 40px;
-	width: 284px;
+	width: 100%;
+	/* min-width: 280px; */
+	/* width: 284px; */
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0px 0px 16px rgba(66, 171, 179, 0.15);
@@ -1839,10 +1841,6 @@ a.sub_title:hover {
 
 .services_slider.slick-initialized .services_item {
 	margin: 0 8px;
-}
-
-.services_slider:not(.slick-initialized) .services_item {
-	margin: 8px;
 }
 
 .services_item img {
@@ -3034,6 +3032,7 @@ a.sub_title:hover {
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.3s;
+	z-index: 12;
 }
 
 .cart_completed.active {
@@ -3380,6 +3379,7 @@ span.doctor_name:hover {
 }
 
 .contacts_text a {
+	width: fit-content;
 	transition: 0.3s;
 }
 

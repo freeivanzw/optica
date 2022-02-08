@@ -196,26 +196,26 @@ $(function(){
           ]
     });
 
-    $('.services_slider').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        variableWidth: true,
-        arrows: false,
-        mobileFirst: true,
-        responsive: [
-            {
-              breakpoint: 1260,
-              settings: {
-                arrows: true,
-                variableWidth: false,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-              }
-            }
-          ]
-    });
+    // $('.services_slider').slick({
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     variableWidth: true,
+    //     arrows: false,
+    //     mobileFirst: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1260,
+    //           settings: {
+    //             arrows: true,
+    //             variableWidth: false,
+    //             slidesToShow: 4,
+    //             slidesToScroll: 1,
+    //           }
+    //         }
+    //       ]
+    // });
     
     if ($(window).width() <= 1205) {
         $('.blog_preview-slider').slick({
